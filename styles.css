@@ -1,0 +1,207 @@
+/* Reset some default styles for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+header {
+    background-color: #0b0000;
+    color: #fff;
+    padding: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie {
+    margin-bottom: 30px;
+}
+
+.movie h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 25%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    background-color: #0b0000;
+    color: #fff;
+}
+
+/* Responsive Design */
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+/* For smartphones */
+@media only screen and (max-width: 480px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* For laptops */
+@media only screen and (min-width: 1024px) {
+    nav ul {
+        float: right;
+    }
+}
+
+
+/* Styles for unvisited links */
+nav ul li a:link {
+    color: #fff;
+}
+
+/* Styles for visited links */
+nav ul li a:visited {
+    color: #ccc;
+}
+
+/* Styles for hover effects */
+nav ul li a:hover {
+    color: rgb(241, 247, 248); /* Change to desired hover color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for mouse over */
+nav ul li a:hover {
+    background-color: #555; /* Change to desired background color */
+}
+
+/* Styles for active links */
+nav ul li a:active {
+    color: #f00; /* Change to desired color for active links */
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
